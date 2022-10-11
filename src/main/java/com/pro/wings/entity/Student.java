@@ -4,11 +4,22 @@ public class Student {
 
 	int id;
 	String name;
-	public Student(int id, String name) {
+	String address;
+	public Student(int id, String name, String address) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.address = address;
 	}
+	
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -27,7 +38,7 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + "]";
+		return "Student [id=" + id + ", name=" + name + ", address=" + address + "]";
 	}
 	
 	
